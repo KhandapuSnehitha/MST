@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style = "text-align: center; font-size: 20px;">
+	<h1> Online seats reservation </h1>
+	Enter the number of seats: <input id = "number">
+	<br><br>
+	<button onclick = "m()">Pay only</button>
+	<p id = "res"></p>
+	<script>
+function ticket(num)    
+	{   
+		actual=num*150; 
+		discount=(actual/10); afterdisc=actual-discount; return afterdisc
+	}   
+	function m()   
+	{   
+		var num = document.getElementById("number").value;   
+		var f = ticket(num);   
+		document.getElementById("res").innerHTML="The total price is " + num + " is: " + f ;   
+    }   
+	</script>
+</body>
+</html>
+
+

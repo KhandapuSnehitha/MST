@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Movies</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center"><i>ShopTime</i></h1>
+<h2>Online bookings</h2>
+<script bgcolor="lavender">
+n=window.prompt("Enter a number:");  
+ if(n<=2)
+{   
+	tcost=n*150  
+	document.write("For n tickets,you need to pay :",tcost);  
+ }   
+else if(n>=6)
+{
+	document.write("Bookings are not Allowed");  
+ }   
+else   
+{   
+		if (n==3)
+		{   
+		t1=150-(150*(3/100));   
+		t2=150-(150*(5/100));   
+		t3=150-(150*(7/100));   
+		tcost=t1+t2+t3;  
+		document.write("For 3 tickets,you need to pay :",tcost,"instead of ",(150*3),"with discounts");  
+	}  
+	else if (n==4)
+		{   
+		t1=150-(150*(3/100));   
+		t2=150-(150*(5/100));   
+		t3=150-(150*(7/100));   
+		t4=150-(150*(9/100));   
+		tcost=t1+t2+t3+t4;   
+		document.write("For 4 tickets,you need to pay :",tcost,"instead of ",(150*4),"with discounts");  
+	}  
+	else 
+		{  
+	t1=150-(150*(3/100));   
+		t2=150-(150*(5/100));   
+		t3=150-(150*(7/100));   
+		t4=150-(150*(9/100));   
+		t5=150-(150*(11/100));   
+		tcost=t1+t2+t3+t4+t5;   
+		document.write("For 5 tickets,you need to pay :",tcost,"instead of ",(150*5),"with discounts");  
+	}  
+ }  
+</script>
+</body>
+</html>
+

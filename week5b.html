@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ 	<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+<title>Exp__5b</title> 
+</head> 
+<body> 
+<script>  	 	
+let c=0; 
+const stock=setInterval(stokc,3000); 
+function stokc(){ 
+var myPromise = new Promise(function (resolve, reject)  
+{ 
+ 	setTimeout(function () 
+{  	 	 	
+var a=Math.floor(Math.random() * 10); 
+ 	 	 	resolve(a); 
+ 	   }, 
+	         3000); 
+}); 
+myPromise.then( 
+		function (data) 
+	 { 
+			console.log(data); 
+}, 
+		function (error) { 
+ 	 	 	 console.log(error); 
+ 	 } 
+); 
+c+=1; if(c==5) 
+{ 
+Stop(); 
+} 
+} 
+function Stop() { 
+ 	 	 clearInterval(stock); 
+} 
+ 	</script> 
+</body> 
+</html> 
+ 
